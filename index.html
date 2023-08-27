@@ -12,9 +12,8 @@ model-viewer {
 
 	<script>
 	const mv = document.querySelector("model-viewer");
-	mv.addEventListener("load", () => 
-	{
 	mv.model.materials[0].pbrMetallicRoughness.setRoughnessFactor(1);
-	});
+	console.log(mv.model.materials[0].pbrMetallicRoughness);
+	console.log('tst')
 	</script>
 </html>
