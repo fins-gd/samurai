@@ -9,4 +9,12 @@ model-viewer {
 
 	<model-viewer alt="G13A 8v cylinder head scan" src="cylinder_head_8v.glb" ar shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
 
+
+	<script>
+	const mv = document.querySelector("model-viewer");
+	mv.addEventListener("load", () => 
+	{
+	mv.model.materials[0].pbrMetallicRoughness.setRoughnessFactor(1);
+	});
+	</script>
 </html>
